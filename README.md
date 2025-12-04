@@ -3,13 +3,13 @@
 This is a full-stack Agile project management system backend built with **Spring Boot**, utilizing **JPA/Hibernate** for ORM and automatic database schema generation. It supports key concepts in Agile workflows such as **Projects**, **Sprints**, **Epics**, **Work Items**, and associated **Personnel** and **Costs**.
 
 ## Team members
-Mai Chiến Hữu - 20205230 - huumai1903
-Nguyễn Bá Tùng Lâm - 20226053 - hust.20226053@gmail.com
-Trần Đức Huy
-Đặng Đức Dương
-Mai Tuấn Kiên
-Lê Vương Khánh
-Trần Chí Thành
+- Mai Chiến Hữu - 20205230 - huumai1903
+- Nguyễn Bá Tùng Lâm - 20226053 - hust.20226053@gmail.com
+- Trần Đức Huy
+- Đặng Đức Dương
+- Mai Tuấn Kiên
+- Lê Vương Khánh
+- Trần Chí Thành
 
 ## Features
 
