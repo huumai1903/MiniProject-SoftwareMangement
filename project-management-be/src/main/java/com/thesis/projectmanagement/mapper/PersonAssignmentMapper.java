@@ -1,44 +1,46 @@
 package com.thesis.projectmanagement.mapper;
 
-import com.thesis.projectmanagement.dto.CostAssignmentDTO;
-import com.thesis.projectmanagement.model.CostAssignment;
-import com.thesis.projectmanagement.repository.CostRepository;
+import com.thesis.projectmanagement.dto.PersonAssignmentDTO;
+import com.thesis.projectmanagement.model.PersonAssignment;
 import com.thesis.projectmanagement.repository.EpicRepository;
+import com.thesis.projectmanagement.repository.PersonRepository;
 import com.thesis.projectmanagement.repository.WorkItemRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public class CostAssignmentMapper {
-    private final CostRepository costRepository;
+public class PersonAssignmentMapper {
+    private final PersonRepository personRepository;
     private final EpicRepository epicRepository;
     private final WorkItemRepository workItemRepository;
     
-    public CostAssignmentDTO toDTO(CostAssignment entity) {
+    public PersonAssignmentDTO toDTO(PersonAssignment entity) {
         if (entity == null) {
             return null;
         }
         
-        return CostAssignmentDTO.builder()
+        return PersonAssignmentDTO.builder()
                 .id(entity.getId())
-                .costId(entity.getCost() != null ? entity.getCost().getId() : null)
+                .personId(entity.getPerson() != null ? entity.getPerson().getId() : null)
                 .epicId(entity.getEpic() != null ? entity.getEpic().getId() : null)
                 .workItemId(entity.getWorkItem() != null ? entity.getWorkItem().getId() : null)
+                .hours(entity.getHours())
+                .description(entity.getDescription())
                 .build();
     }
     
-    public CostAssignment toEntity(CostAssignmentDTO dto) {
+    public PersonAssignment toEntity(PersonAssignmentDTO dto) {
         if (dto == null) {
             return null;
         }
         
-        CostAssignment assignment = new CostAssignment();
+        PersonAssignment assignment = new PersonAssignment();
         assignment.setId(dto.getId());
-
-        if (dto.getCostId() != null) {
-            assignment.setCost(costRepository.findById(dto.getCostId())
-                    .orElseThrow(() -> new IllegalArgumentException("Cost not found with id: " + dto.getCostId())));
+        
+        if (dto.getPersonId() != null) {
+            assignment.setPerson(personRepository.findById(dto.getPersonId())
+                    .orElseThrow(() -> new IllegalArgumentException("Person not found with id: " + dto.getPersonId())));
         }
         
         if (dto.getEpicId() != null) {
@@ -51,17 +53,20 @@ public class CostAssignmentMapper {
                     .orElseThrow(() -> new IllegalArgumentException("WorkItem not found with id: " + dto.getWorkItemId())));
         }
         
+        assignment.setHours(dto.getHours());
+        assignment.setDescription(dto.getDescription());
+        
         return assignment;
     }
 
-    public void updateEntityFromDTO(CostAssignmentDTO dto, CostAssignment entity) {
+    public void updateEntityFromDTO(PersonAssignmentDTO dto, PersonAssignment entity) {
         if (dto == null || entity == null) {
             return;
         }
         
-        if (dto.getCostId() != null) {
-            entity.setCost(costRepository.findById(dto.getCostId())
-                    .orElseThrow(() -> new IllegalArgumentException("Cost not found with id: " + dto.getCostId())));
+        if (dto.getPersonId() != null) {
+            entity.setPerson(personRepository.findById(dto.getPersonId())
+                    .orElseThrow(() -> new IllegalArgumentException("Person not found with id: " + dto.getPersonId())));
         }
         
         if (dto.getEpicId() != null) {
@@ -72,6 +77,14 @@ public class CostAssignmentMapper {
             entity.setWorkItem(workItemRepository.findById(dto.getWorkItemId())
                     .orElseThrow(() -> new IllegalArgumentException("WorkItem not found with id: " + dto.getWorkItemId())));
             entity.setEpic(null);
+        }
+
+        if (dto.getHours() != null) {
+            entity.setHours(dto.getHours());
+        }
+        
+        if (dto.getDescription() != null) {
+            entity.setDescription(dto.getDescription());
         }
     }
 } 

@@ -9,9 +9,11 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CostAssignmentDTO {
+public class PersonAssignmentDTO {
     private Long id;
-    private Long costId;
+    private Long personId;
     private Long epicId;
     private Long workItemId;
+    private Double hours;
+    private String description;
 } 
