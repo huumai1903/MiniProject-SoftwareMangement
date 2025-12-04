@@ -9,10 +9,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CostDTO {
+public class PersonDTO {
     private Long id;
     private String name;
-    private String description;
-    private Double amount;
-    private String category;
+    private String email;
+    private String role;
 } 
