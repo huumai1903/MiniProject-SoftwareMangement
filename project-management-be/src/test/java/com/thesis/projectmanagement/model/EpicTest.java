@@ -19,16 +19,16 @@ class EpicTest {
     @BeforeEach
     void setUp() {
         project = Project.builder()
-                .id(1L)
-                .title("Test Project")
+                .id(4L)
+                .title("Test")
                 .build();
 
         epic = Epic.builder()
-                .id(1L)
-                .title("Test Epic")
-                .description("Test Description")
+                .id(4L)
+                .title("Test epic feature")
+                .description("Testing epic feature for project")
                 .startDate(LocalDate.now())
-                .endDate(LocalDate.now().plusMonths(1))
+                .endDate(LocalDate.now().plusDays(7))
                 .project(project)
                 .workItems(new ArrayList<>())
                 .costAssignments(new HashSet<>())
@@ -36,18 +36,18 @@ class EpicTest {
                 .build();
 
         workItem = WorkItem.builder()
-                .id(1L)
-                .title("Test Work Item")
+                .id(4L)
+                .title("Test work item")
                 .epic(epic)
                 .build();
 
         costAssignment = CostAssignment.builder()
-                .id(1L)
-                .epic(epic)
+                .id(4L)
+                .epic()
                 .build();
 
         personAssignment = PersonAssignment.builder()
-                .id(1L)
+                .id(4L)
                 .epic(epic)
                 .build();
     }
