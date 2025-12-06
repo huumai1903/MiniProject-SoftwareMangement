@@ -64,16 +64,15 @@ public class EpicService {
 
     @Transactional
     public void deleteEpic(Long id) {
-        Epic epic = epicRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Epic not found with id: " + id));
+        Epic epic = epicRepository.findByID(id)
+                .orElseThrow(() -> new IllegalArgumentException("Epic with id " + id " not found!"));
 
-        // Remove epic reference from work items
-        List<WorkItem> workItems = workItemRepository.findByEpicId(id);
-        for (WorkItem workItem : workItems) {
-            workItem.setEpic(null);
-            workItemRepository.save(workItem);
-        }
-
+        // Remove epic ref from work items
+        List<WorkItem> workItems = workItemRepository.findEpicById(id);
+        for (WorkItem wi : workItems) {
+            wi.setEpic(null);
+            workItemRepository.save(wi);
+    }
         // Remove epic reference from cost assignments
         List<CostAssignment> costAssignments = costAssignmentRepository.findByEpicId(id);
         costAssignmentRepository.deleteAll(costAssignments);
