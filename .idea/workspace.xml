@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e294194d-f2fa-4a56-8be4-b39f69ffef48" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/project-management-be/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/data/project-db.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/data/project-db.trace.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/ProjectManagementApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/config/DataSeeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/constants/ProjectStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/constants/SprintStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/constants/WorkItemLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/constants/WorkItemPriority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/constants/WorkItemStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/constants/WorkItemType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/controller/CostAssignmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/controller/CostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/controller/EpicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/controller/PersonAssignmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/controller/PersonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/controller/ProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/controller/SprintController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/controller/WorkItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/dto/CostAssignmentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/dto/CostDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/dto/EpicDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/dto/PersonAssignmentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/dto/PersonDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/dto/ProjectDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/dto/SprintDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/dto/WorkItemDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/mapper/CostAssignmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/mapper/CostMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/mapper/EpicMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/mapper/PersonAssignmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/mapper/PersonMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/mapper/ProjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/mapper/SprintMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/mapper/WorkItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/model/Cost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/model/CostAssignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/model/Epic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/model/PersonAssignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/model/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/model/Sprint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/model/WorkItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/repository/CostAssignmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/repository/CostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/repository/EpicRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/repository/PersonAssignmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/repository/PersonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/repository/ProjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/repository/SprintRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/repository/WorkItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/service/CostAssignmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/service/CostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/service/EpicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/service/PersonAssignmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/service/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/service/ProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/service/SprintService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/java/com/thesis/projectmanagement/service/WorkItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/test/java/com/thesis/projectmanagement/ProjectManagementApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/test/java/com/thesis/projectmanagement/model/CostAssignmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/test/java/com/thesis/projectmanagement/model/CostTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/test/java/com/thesis/projectmanagement/model/EpicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/test/java/com/thesis/projectmanagement/model/PersonAssignmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/test/java/com/thesis/projectmanagement/model/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/test/java/com/thesis/projectmanagement/model/ProjectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/test/java/com/thesis/projectmanagement/model/SprintTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/test/java/com/thesis/projectmanagement/model/WorkItemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-management-be/src/test/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="36L6vl1PgLvPuQ7Bg1OPatyq9od" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "initial",
+    "last_opened_file_path": "/Users/apple/Documents/Programming/GitClone/MiniProject-SoftwareMangement",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e294194d-f2fa-4a56-8be4-b39f69ffef48" name="Changes" comment="" />
+      <created>1764773736904</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764773736904</updated>
+      <workItem from="1764773738132" duration="451000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
