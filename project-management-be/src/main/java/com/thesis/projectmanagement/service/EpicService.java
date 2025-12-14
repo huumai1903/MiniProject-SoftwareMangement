@@ -56,7 +56,7 @@ public class EpicService {
     public EpicDTO updateEpic(Long id, EpicDTO epicDTO) {
         Epic existingEpic = epicRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Epic not found with id: " + id));
-        
+
         epicMapper.updateEntityFromDTO(epicDTO, existingEpic);
         existingEpic = epicRepository.save(existingEpic);
         return epicMapper.toDTO(existingEpic);
@@ -64,15 +64,16 @@ public class EpicService {
 
     @Transactional
     public void deleteEpic(Long id) {
-        Epic epic = epicRepository.findByID(id)
-                .orElseThrow(() -> new IllegalArgumentException("Epic with id " + id " not found!"));
+        Epic epic = epicRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Epic not found with id: " + id));
 
-        // Remove epic ref from work items
-        List<WorkItem> workItems = workItemRepository.findEpicById(id);
-        for (WorkItem wi : workItems) {
-            wi.setEpic(null);
-            workItemRepository.save(wi);
-    }
+        // Remove epic reference from work items
+        List<WorkItem> workItems = workItemRepository.findByEpicId(id);
+        for (WorkItem workItem : workItems) {
+            workItem.setEpic(null);
+            workItemRepository.save(workItem);
+        }
+
         // Remove epic reference from cost assignments
         List<CostAssignment> costAssignments = costAssignmentRepository.findByEpicId(id);
         costAssignmentRepository.deleteAll(costAssignments);
